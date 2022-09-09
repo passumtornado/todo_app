@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+     <div class="col-md-2"></div>
+     <div class="col-md-8">
+        <div class="card shadow d-flex flex-column gap-4 p-3">
+          <div class="title">
+              <h1>Todo App 2022</h1>
+              <span>Task list</span>
+              <hr class="vertLine">
+          </div>
+          <div class="form-section d-flex flex-column gap-2">
+            <h3>Add Task</h3>
+             <form id="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="task" placeholder="Enter task">
+                        <span class="errorMsg text-danger mr-2"></span>
+                    </div>
+                    <div class="form-group mt-1">
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div class="form-group mt-3">
+                         <button type="submit" class="btn btn-info text-white" id="submit">Save</button>
+                    </div>
+                </form>
+          </div>
+          <div id="taskList" class="taskList d-flex flex-column gap-2 mt-4">
+            <h3>List Task</h3>
+            
+          </div>
+        </div>
+     </div>
+     <div class="col-md-2"></div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

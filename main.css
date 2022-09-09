@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&family=Overpass:wght@100;300;400;500;600;700&display=swap');
+:root{
+    --dark:#374151;
+    --darker:#1F2937;
+    --darkest:#111827;
+    --grey:#6B7280;
+    --pink:#EC4899;
+    --purple:#8B5CF6;
+    --light:#EEE;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    height:100vh;
+    background:var(--dark);
+    font-family: 'Fira sans',sans-serif;
+}
+.card{
+    background:var(--darker) !important;
+    height:800px;
+    width:100%;
+}
+h1{
+    font-size:2.5rem;
+    font-weight:300;
+    color:var(--grey);
+}
+h3{
+   font-size:2rem;
+    font-weight:700;
+    color:var(--light); 
+}
+p{
+    padding:0;
+    margin:0;
+    font-size: 18px;
+    font-weight:500;
+    color:var(--light)
+}
+.title span{
+    font-size:22px;
+    font-weight:500;
+    color:var(--pink);
+}
+.title{
+    display:flex;
+    flex-direction:column;
+    gap:.2rem;
+    justify-content: center;
+    border-bottom:1px solid var(--grey);
+} 
+.form-group input{
+    outline:none;
+    border:none;
+    background:var(--darkest);
+    border-radius:16px;
+    color:var(--grey);
+}
+.form-group textarea{
+     outline:none;
+    border:none;
+    background:var(--darkest);
+    border-radius:16px;
+    padding:.8rem .5rem;
+    color:var(--grey);
+}
+.form-group .btn-info{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:150px;
+    background-image:linear-gradient(to right,var(--pink),var(--purple)) !important;
+    outline:none;
+    border:none;
+    border-radius: 16px;
+}
+.btn-info:hover{
+    opacity:0.8;
+}
+.alert-light{
+    background-image:linear-gradient(to right,var(--darkest),var(--darker)) !important;
+    border:none !important;
+    border-radius:50px;
+}
+.fas{
+    background-image:linear-gradient(to right,var(--pink), var(--purple));
+    border-radius:16px;
+    color:var(--light);
+    cursor:pointer;
+}
+.taskList{
+    overflow-y:scroll;
+}
+.taskList::-webkit-scrollbar { width: 0 !important }
